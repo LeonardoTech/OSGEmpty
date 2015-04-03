@@ -1,0 +1,10 @@
+*.pdb
+Debug
+Release
+osgempty-e2035722
+x64
+/OSGEmpty/*.aps
+*.opensdf
+ipch
+*.suo
+*.sdf
