@@ -93,7 +93,7 @@
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
@@ -133,7 +133,23 @@ Copy $(OSG_ROOT)\bin\osg111-osgViewerd.dll $(TargetDir)
 Copy $(OSG_ROOT)\bin\osg111-osgVolumed.dll $(TargetDir)
 Copy $(OSG_ROOT)\bin\osg111-osgWidgetd.dll $(TargetDir)
 Copy $(OSG_ROOT)\bin\ot20-OpenThreadsd.dll $(TargetDir)
-Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)</Command>
+Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgAnimationd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgDBd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgFXd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgGAd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgManipulatord.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgParticled.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgPresentationd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgShadowd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgSimd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTerraind.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTextd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgUtild.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgViewerd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgVolumed.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgWidgetd.pdb $(TargetDir)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,7 +162,7 @@ Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)</Command>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
