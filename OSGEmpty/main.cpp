@@ -32,7 +32,7 @@ osg::ref_ptr<osg::Node> createQuad()
 	return geode.get();
 }
 
-void main()
+int main()
 {
 	osgViewer::Viewer viewer;
 	osg::Group* root = new osg::Group();
@@ -40,4 +40,5 @@ void main()
 	viewer.setSceneData(root);
 	viewer.realize();
 	viewer.run();
+	return 0;
 }
