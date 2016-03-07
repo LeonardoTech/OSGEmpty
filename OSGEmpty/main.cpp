@@ -37,6 +37,7 @@ int main()
 	osgViewer::Viewer viewer;
 	osg::Group* root = new osg::Group();
 	root->addChild(createQuad().get());
+	//root->addChild(osgDB::readNodeFile("aaa.fbx"));
 	viewer.setSceneData(root);
 	viewer.realize();
 	viewer.run();
